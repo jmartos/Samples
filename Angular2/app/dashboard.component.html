@@ -1,0 +1,10 @@
+<div class="col-md-12" id="dashboard">
+  <div *ngFor="let area of areas; let i = index" (click)="gotoDetail(area)" class="col-1-3">
+    <p class="text" id="title{{i}}">{{area.name}}</p>
+    <div class="module{{i}}">
+      <p class="text" id="number">{{area.population}}</p>
+      <p class="text" id="population">population</p>
+    </div>
+    <p class="text" id="address">{{area.address}}</p>  
+    <hr class="line{{i}}">
+  </div>

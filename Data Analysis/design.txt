@@ -1,0 +1,12 @@
+A tu juicio, ¿Qué módulos harían falta para desarrollar un producto como este? Se trata de realizar una aproximación a alto nivel sin entrar en detalles técnicos, sólo es necesario describir con un párrafo lo que haría cada módulo.
+
+
+1-Un primer módulo debería realizar peticiones a la fuente de infomración, en este caso Mº de Interior, para recoger los datos del escrutinio.
+
+2-Un segundo módulo debería de utlizar esos datos recogidos de escrutinio por provincias para realizar el reparto de escaños en cada provincia aplicando el sistema D´Hont con el total de votos contabilizados hasta ese momento.
+
+3-Un tercer módulo debería de recoger los resulatados por provincias del segúndo módulo y sumarlos a nivel autonómico y/o nacional para arrojar los resultados totales en ese momento.
+
+4a-En caso de que el cliente solicite directamente maps y gráficas, un cuarto módulo a) debería de pintar mapas y gráficas con los datos de reparto de escaños en cada provincia y a niveles autonómico y/o nacional, y enviarlos como imágenes a los clientes.
+
+4b-En caso de que el cliente solicite los datos para pintar los mapas y gráifas con su propio estilo, un cuarto módulo b) debería de poder enviar los datos vía web socket cada 3 minutos, para que el clinete no tenga que realizar las peticiones en cada actualización de los dataos, y en formato JSON, para que el cliente los pueda pintar como prefiera.

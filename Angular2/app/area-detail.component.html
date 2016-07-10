@@ -1,0 +1,10 @@
+<div *ngIf="area">
+  <h2>{{area.name}} details!</h2>
+  <div>
+    <label>id: </label>{{area.id}}</div>
+    <div>
+      <label>name: </label>
+      <input [(ngModel)]="area.name" placeholder="name" />
+    </div>
+    <button (click)="goBack()">Back</button>
+  </div>

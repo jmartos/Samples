@@ -1,0 +1,20 @@
+<h2>Areassss</h2>
+<ul class="areas">
+  <li *ngFor="let area of areas"
+  [class.selected]="area === selectedArea"
+  (click)="onSelect(area)">
+  <span class="badge">{{area.id}}</span> {{area.name}} 
+</li>
+</ul>
+<div *ngIf="selectedArea">
+  <h2>
+    {{selectedArea.name | uppercase}} is my area
+  </h2>
+  <button (click)="gotoDetail()">View Details</button>
+</div>
+<base-chart class="chart"
+[datasets]="radarChartData"
+[labels]="radarChartLabels"
+[chartType]="radarChartType"
+(chartHover)="chartHovered($event)"
+(chartClick)="chartClicked($event)"></base-chart>
