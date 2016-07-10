@@ -1,6 +1,6 @@
 # FrontEnd-Exercise
 
-FrontEnd exercise, responsive design with the principle "mobile first". Made without Javascript libraries, taking data from .json file with a nodejs server.
+FrontEnd exercise, responsive design with the principle "mobile first". Made without Javascript libraries, it takes data from .json file with a nodejs server.
 
 Technologies:
 -HTML5, Sass, Javascript, Nodejs
